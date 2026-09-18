@@ -14,6 +14,7 @@
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./portfolio-additions.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,7 +43,7 @@
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="#direction">Direction</a>
       <a href="#education">Education</a>
-      <a href="#work">Collaborations</a>
+      <a href="#case-studies">Work</a>
       <a href="./Manasvi_Wadhwa_Resume.pdf">Resume</a>
       <a class="nav-cta" href="mailto:wadhwamanasvi3@gmail.com?subject=Internship%20conversation">Let's talk</a>
     </nav>
@@ -98,53 +99,91 @@
       </div>
     </section>
 
-    <section class="work" id="work" aria-labelledby="work-title">
-      <div class="shell section-heading light"><p>Supporting collaborations</p><p>03–05</p></div>
-      <div class="shell work-intro">
-        <h2 id="work-title">Real exposure.<br><em>Honest context.</em></h2>
-        <p>These projects show where I helped and learned. They are not solo case studies, and their industries are not the specialization I am choosing.</p>
+    <section class="featured-work shell" id="case-studies" aria-labelledby="case-studies-title">
+      <div class="section-heading"><p>Selected case studies</p><p>03–04</p></div>
+      <div class="featured-intro">
+        <div>
+          <p class="kicker">Clear roles. Real evidence.</p>
+          <h2 id="case-studies-title">Research behaviour.<br><em>Map the system.</em></h2>
+        </div>
+        <p>Two collaborative academic projects where my role is explicit: co-researching a classroom behaviour and leading a team through a complex local service system.</p>
       </div>
-      <div class="shell projects">
-        <article class="project peach">
-          <div class="project-visual"><img src="./projects/finloby.webp" alt="Finloby finance platform"><span class="project-number">03</span><span class="project-year">Collaboration</span></div>
-          <div class="project-copy">
-            <div class="project-meta"><span>Live client work</span><span>Finance platform</span></div>
-            <h3>Finloby</h3>
-            <p class="project-lead">Exposure to simplifying a complex financial-services experience.</p>
-            <p class="project-note"><strong>My context</strong>I assisted <a class="credit-link" href="https://devgghya.github.io" target="_blank" rel="noreferrer">Devgghya Kulshrestha</a> through WebGraphic Bee. I am crediting the collaboration without claiming sole ownership.</p>
-            <ul class="tag-list" aria-label="Finloby themes"><li>Support role</li><li>Content clarity</li><li>Digital QA</li></ul>
-            <a class="text-link" href="https://finloby.com" target="_blank" rel="noreferrer">Visit live product <span>↗</span></a>
+
+      <div class="case-preview-grid">
+        <article class="case-preview research-preview">
+          <a class="case-preview-image" href="./projects/front-row-research/">
+            <img src="./projects/front-row-research.webp" alt="Cover of the front-row classroom seating research study">
+            <span>03 · UX research</span>
+          </a>
+          <div class="case-preview-copy">
+            <p class="case-role">Co-researcher · With Medha</p>
+            <h3>Why Students Avoid the Front Row</h3>
+            <p>A mixed-method study of how peer groups, physical comfort, and classroom dynamics influence seating choices.</p>
+            <ul class="case-tags" aria-label="Research scope"><li>17 survey responses</li><li>6 interviews</li><li>Observation</li></ul>
+            <a class="case-link" href="./projects/front-row-research/">Read case study <span>→</span></a>
           </div>
         </article>
 
-        <article class="project blue">
-          <div class="project-visual"><img src="./projects/dubai-debt-solutions.webp" alt="Dubai Debt Solutions service experience"><span class="project-number">04</span><span class="project-year">Collaboration</span></div>
-          <div class="project-copy">
-            <div class="project-meta"><span>Private preview</span><span>Service journey</span></div>
-            <h3>Dubai Debt Solutions</h3>
-            <p class="project-lead">Exposure to clear service paths, an estimate flow, and a confidential enquiry journey.</p>
-            <p class="project-note"><strong>My context</strong>I assisted <a class="credit-link" href="https://devgghya.github.io" target="_blank" rel="noreferrer">Devgghya Kulshrestha</a> on parts of this experience. It is supporting work, not a solo project.</p>
-            <ul class="tag-list" aria-label="Dubai Debt Solutions themes"><li>Support role</li><li>Service flow</li><li>Interface review</li></ul>
-            <a class="text-link" href="https://dds-kohl.vercel.app/" target="_blank" rel="noreferrer">View private preview <span>↗</span></a>
+        <article class="case-preview saaf-preview">
+          <a class="case-preview-image" href="./projects/saaf-dehradun/">
+            <img src="./projects/saaf-dehradun.webp" alt="Saaf Dehradun waste clarity system proposal">
+            <span>04 · Systems design</span>
+          </a>
+          <div class="case-preview-copy">
+            <p class="case-role">Team lead · With Rishi, Vanshika, and Ananta</p>
+            <h3>Saaf Dehradun</h3>
+            <p>A field-research and systems-design proposal connecting citizens, workers, infrastructure, and accountability.</p>
+            <ul class="case-tags" aria-label="Project methods"><li>Field research</li><li>System map</li><li>Service concept</li></ul>
+            <a class="case-link" href="./projects/saaf-dehradun/">Read case study <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="work" id="additional-work" aria-labelledby="work-title">
+      <div class="shell section-heading light"><p>Additional collaborations</p><p>05–07</p></div>
+      <div class="shell work-intro">
+        <h2 id="work-title">More work.<br><em>Lighter footprint.</em></h2>
+        <p>A compact record of projects where I supported a wider team. They stay visible without competing with the two complete case studies above.</p>
+      </div>
+      <div class="shell collaboration-grid">
+        <article class="collaboration-card">
+          <a class="collaboration-visual" href="https://portfolio-5208db.webflow.io/artificial-intelligence-and-extended-reality/mind-palace-xr" target="_blank" rel="noreferrer">
+            <img src="./projects/mind-palace-xr.webp" alt="Mind Palace XR research prototype"><span>View project ↗</span>
+          </a>
+          <div class="collaboration-copy">
+            <p class="collaboration-type">Spatial AI research</p><h3>Mind Palace XR</h3>
+            <p>Supporting an exploratory Meta Quest 3 experience combining spatial memory, AI, and augmented reality.</p>
+            <p class="collaboration-credit">Contributing under Professor Samart Reddy</p>
           </div>
         </article>
 
-        <article class="project green">
-          <div class="project-visual"><img src="./projects/mind-palace-xr.webp" alt="Mind Palace XR research prototype"><span class="project-number">05</span><span class="project-year">Exploration</span></div>
-          <div class="project-copy">
-            <div class="project-meta"><span>Research exposure</span><span>Spatial prototype</span></div>
-            <h3>Mind Palace XR</h3>
-            <p class="project-lead">Early exposure to how research questions can become an interactive prototype.</p>
-            <p class="project-note"><strong>My context</strong>I supported an exploratory collaboration and learned from the process. XR is not the field I am currently targeting.</p>
-            <ul class="tag-list" aria-label="Mind Palace XR themes"><li>Exploration</li><li>Research context</li><li>Team support</li></ul>
-            <a class="text-link" href="https://portfolio-5208db.webflow.io/artificial-intelligence-and-extended-reality/mind-palace-xr" target="_blank" rel="noreferrer">View research context <span>↗</span></a>
+        <article class="collaboration-card">
+          <a class="collaboration-visual" href="https://finloby.com" target="_blank" rel="noreferrer">
+            <img src="./projects/finloby.webp" alt="Finloby finance platform"><span>Visit live product ↗</span>
+          </a>
+          <div class="collaboration-copy">
+            <p class="collaboration-type">Live finance platform</p><h3>Finloby</h3>
+            <p>Supporting content clarity and digital QA for a Dubai-based financial-services experience.</p>
+            <p class="collaboration-credit">Contributing under <a href="https://devgghya.github.io" target="_blank" rel="noreferrer">Devgghya Kulshrestha</a></p>
+          </div>
+        </article>
+
+        <article class="collaboration-card">
+          <a class="collaboration-visual" href="https://dds-kohl.vercel.app/" target="_blank" rel="noreferrer">
+            <img src="./projects/dubai-debt-solutions.webp" alt="Dubai Debt Solutions service experience"><span>View private preview ↗</span>
+          </a>
+          <div class="collaboration-copy">
+            <p class="collaboration-type">Service journey</p><h3>Dubai Debt Solutions</h3>
+            <p>Supporting a calm, trust-focused journey for people navigating a sensitive financial situation.</p>
+            <p class="collaboration-credit">Contributing under <a href="https://devgghya.github.io" target="_blank" rel="noreferrer">Devgghya Kulshrestha</a></p>
           </div>
         </article>
       </div>
     </section>
 
     <section class="experience" aria-labelledby="experience-title">
-      <div class="shell section-heading"><p>Experience</p><p>06</p></div>
+      <div class="shell section-heading"><p>Experience</p><p>08</p></div>
       <div class="shell experience-row">
         <p class="experience-org">WebGraphic Bee</p>
         <div>
