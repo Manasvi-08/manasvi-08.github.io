@@ -1,9 +1,13 @@
-.portfolio-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
-.portfolio-card{display:flex;flex:0 1 calc((100% - 36px)/3);min-width:0;overflow:hidden;flex-direction:column;border:1px solid #f8f5ed2e;border-radius:10px;background:#f8f5ed0e}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.portfolio-card{display:flex;min-width:0;overflow:hidden;flex-direction:column;border:1px solid #f8f5ed2e;border-radius:10px;background:#f8f5ed0e}
 .portfolio-visual{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:#25302c;border-bottom:1px solid #f8f5ed2e}
 .portfolio-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,#0a100ec7)}
 .portfolio-visual img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .5s}
 a.portfolio-visual:hover img{transform:scale(1.035)}
+.portfolio-collage{display:grid;grid-template-columns:1fr 1fr}
+.portfolio-collage a{display:block;min-width:0;overflow:hidden}
+.portfolio-collage a+ a{border-left:1px solid #f8f5ed2e}
+.portfolio-collage a:hover img{transform:scale(1.035)}
 .portfolio-visual span{position:absolute;z-index:1;left:22px;bottom:20px;color:#fff;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;text-shadow:0 1px 8px #0008}
 .portfolio-copy{display:flex;flex:1;flex-direction:column;padding:26px 24px 28px}
 .portfolio-type{margin:0 0 24px;color:#f8f5ed94;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
@@ -13,5 +17,4 @@ a.portfolio-visual:hover img{transform:scale(1.035)}
 .portfolio-tags li{padding:7px 10px;border:1px solid #f8f5ed30;border-radius:999px;color:#f8f5edbd;font-size:10px;font-weight:700}
 .portfolio-credit{margin:auto 0 0;padding-top:18px;border-top:1px solid #f8f5ed26;color:#f8f5ed94;font-size:11px;line-height:1.5}
 .portfolio-credit a{color:#fff;font-weight:700;border-bottom:1px solid}
-@media(max-width:980px){.portfolio-card{flex-basis:calc((100% - 18px)/2)}}
-@media(max-width:700px){.portfolio-card{flex-basis:100%}.portfolio-copy>p:not(.portfolio-type):not(.portfolio-credit){min-height:0}}
+@media(max-width:700px){.portfolio-grid{grid-template-columns:1fr}.portfolio-copy>p:not(.portfolio-type):not(.portfolio-credit){min-height:0}}
